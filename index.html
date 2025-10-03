@@ -109,5 +109,83 @@
       </g>
     </svg>
   </figure>
+
+  <figure id="scene-adjusted-figure">
+    <figcaption>Adjusted scene (Step 3)</figcaption>
+    <svg id="scene-adjusted" viewBox="0 0 800 500" aria-labelledby="svgTitle svgDesc" role="img">
+      <title id="svgTitle">House and Garden Scene</title>
+      <desc id="svgDesc">A simple SVG illustration of a house with a garden, including a sun, cloud, tree, and fence.</desc>
+      <!-- Adjusted SVG content -->
+
+      <!-- Sky and Grass -->
+      <rect x="0" y="250" width="800" height="250" fill="#7CFC00" />
+
+      <!-- Sun -->
+      <circle cx="700" cy="100" r="50" fill="#FFD700" />
+
+      <!-- Cloud -->
+      <ellipse cx="200" cy="80" rx="50" ry="30" fill="#FFFFFF" />
+      <ellipse cx="240" cy="80" rx="50" ry="30" fill="#FFFFFF" />
+      <ellipse cx="220" cy="60" rx="50" ry="30" fill="#FFFFFF" />
+
+      <!-- Tree (repositioned slightly) -->
+      <g transform="translate(-20, 0)">
+        <rect x="100" y="200" width="30" height="100" fill="#8B4513" />
+        <circle cx="115" cy="180" r="40" fill="#228B22" />
+      </g>
+
+      <!-- House (repositioned slightly) -->
+      <g transform="translate(20, 0)">
+        <rect x="300" y="200" width="200" height="150" fill="#FF6347" />
+        <polygon points="300,200 400,100 500,200" fill="#8B0000" />
+        <rect x="450" y="130" width="20" height="50" fill="#8B0000" />
+        <rect x="370" y="270" width="60" height="80" fill="#8B4513" />
+        <circle cx="420" cy="310" r="5" fill="#000000" />
+        <rect x="320" y="230" width="40" height="40" fill="#87CEEB" />
+        <line x1="320" y1="250" x2="360" y2="250" stroke="#000000" />
+        <line x1="340" y1="230" x2="340" y2="270" stroke="#000000" />
+        <rect x="440" y="230" width="40" height="40" fill="#87CEEB" />
+        <line x1="440" y1="250" x2="480" y2="250" stroke="#000000" />
+        <line x1="460" y1="230" x2="460" y2="270" stroke="#000000" />
+      </g>
+
+      <!-- Fence (dashed stroke) -->
+      <polyline points="200,350 220,330 240,350 260,330 280,350 300,330 320,350" fill="none" stroke="#8B4513" stroke-width="4" stroke-dasharray="5,5" />
+
+      <!-- Path (curved stone footpath to door) -->
+      <path d="M400,350 Q410,370 400,400 T400,450" fill="none" stroke="#A9A9A9" stroke-width="3" />
+
+      <!-- Mailbox -->
+      <rect x="370" y="360" width="20" height="30" fill="#8B4513" />
+      <polygon points="370,360 380,350 390,360" fill="#8B0000" />
+
+      <!-- Chimney smoke -->
+      <ellipse cx="460" cy="100" rx="10" ry="5" fill="#D3D3D3" opacity="0.8" />
+      <ellipse cx="470" cy="90" rx="15" ry="7" fill="#D3D3D3" opacity="0.6" />
+      <ellipse cx="480" cy="80" rx="20" ry="10" fill="#D3D3D3" opacity="0.4" />
+    </svg>
+  </figure>
+
+  <style>
+    /* Scoped styles for the adjusted SVG */
+    #scene-adjusted {
+      border: 2px solid #333;
+      border-radius: 8px;
+    }
+
+    #scene-adjusted polyline {
+      stroke-dasharray: 5, 5;
+    }
+
+    #scene-adjusted path {
+      stroke: #A9A9A9;
+      stroke-width: 3;
+    }
+
+    #scene-adjusted ellipse {
+      fill: #D3D3D3;
+      opacity: 0.4;
+    }
+  </style>
 </body>
 </html>
