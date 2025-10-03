@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T04 – SVG House & Garden</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f8ff;
+    }
+    svg {
+      border: 2px solid #333;
+      border-radius: 8px;
+      background-color: #87CEEB;
+    }
+  </style>
+</head>
+<body>
+  <svg viewBox="0 0 800 500" aria-labelledby="svgTitle svgDesc" role="img">
+    <title id="svgTitle">House and Garden Scene</title>
+    <desc id="svgDesc">A simple SVG illustration of a house with a garden, including a sun, cloud, tree, and fence.</desc>
+
+    <!-- Sky and Grass -->
+    <rect x="0" y="250" width="800" height="250" fill="#7CFC00" />
+
+    <!-- Sun -->
+    <circle cx="700" cy="100" r="50" fill="#FFD700" />
+
+    <!-- Cloud -->
+    <ellipse cx="200" cy="80" rx="50" ry="30" fill="#FFFFFF" />
+    <ellipse cx="240" cy="80" rx="50" ry="30" fill="#FFFFFF" />
+    <ellipse cx="220" cy="60" rx="50" ry="30" fill="#FFFFFF" />
+
+    <!-- Tree -->
+    <rect x="100" y="200" width="30" height="100" fill="#8B4513" />
+    <circle cx="115" cy="180" r="40" fill="#228B22" />
+
+    <!-- House -->
+    <rect x="300" y="200" width="200" height="150" fill="#FF6347" />
+    <polygon points="300,200 400,100 500,200" fill="#8B0000" />
+    <rect x="450" y="130" width="20" height="50" fill="#8B0000" />
+
+    <!-- Door -->
+    <rect x="370" y="270" width="60" height="80" fill="#8B4513" />
+    <circle cx="420" cy="310" r="5" fill="#000000" />
+
+    <!-- Windows -->
+    <rect x="320" y="230" width="40" height="40" fill="#87CEEB" />
+    <line x1="320" y1="250" x2="360" y2="250" stroke="#000000" />
+    <line x1="340" y1="230" x2="340" y2="270" stroke="#000000" />
+    <rect x="440" y="230" width="40" height="40" fill="#87CEEB" />
+    <line x1="440" y1="250" x2="480" y2="250" stroke="#000000" />
+    <line x1="460" y1="230" x2="460" y2="270" stroke="#000000" />
+
+    <!-- Fence -->
+    <polyline points="200,350 220,330 240,350 260,330 280,350 300,330 320,350" fill="none" stroke="#8B4513" stroke-width="4" />
+
+    <!-- Path -->
+    <path d="M400,350 Q420,400 440,500" fill="none" stroke="#D2B48C" stroke-width="5" />
+
+    <!-- Caption -->
+    <text x="400" y="480" font-size="20" text-anchor="middle" fill="#000000">Welcome to the House & Garden</text>
+  </svg>
+</body>
+</html>
